@@ -1,0 +1,5 @@
+.vagrant
+.idea
+cm/provisioning/roles/
+.irb_history
+.yardoc

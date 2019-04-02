@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+require_relative 'config/app_init'
+
+namespace :db do
+  desc 'Запуск миграций базы данных'
+  task :migrate, [:to, :from] do |_task, _args|
+    require_relative 'lib/crazy/tasks/migration'
+    Crazy::Tasks::Migration.new("#{Crazy.path}/db/migrations").launch!
+  end
+end

@@ -1,0 +1,30 @@
+---
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+    - cm/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - Rakefile
+    - Vagrantfile
+    - db/migrations/*
+    - spec/**/*_spec.rb
+    - spec/factories/**/*
+    - spec/spec_helper.rb
+    - spec/shared/action_parameters_receiver.rb
+
+Naming/UncommunicativeMethodParamName:
+  AllowedNames:
+    - db
+    - to
+    - id
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/RaiseArgs:
+  Enabled: false

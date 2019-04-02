@@ -1,0 +1,6 @@
+--plugin yard-sinatra
+--readme README.md
+--title 'Cabinet Service Documentation'
+--charset utf-8
+--markup markdown
+- README.md CHANGELOG.md
